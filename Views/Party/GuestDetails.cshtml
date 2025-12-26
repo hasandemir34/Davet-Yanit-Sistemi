@@ -1,0 +1,15 @@
+@model deneme.Models.Guest
+
+<h2>Misafir Detayları</h2>
+<hr />
+
+<div>
+    <p><strong>İsim:</strong> @Model.Name</p>
+    <p><strong>Telefon:</strong> @Model.Phone</p>
+    <p>
+        <strong>Katılım Durumu:</strong> 
+        @(Model.WillAttend ? "Geliyor 🥳" : "Gelemiyor 😞")
+    </p>
+</div>
+
+<a asp-action="List" class="btn btn-secondary">Listeye Dön</a>
