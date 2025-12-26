@@ -13,7 +13,9 @@
                 <td>@guest.Name</td>
                 <td>@guest.Phone</td>
                 <td>
-                    <a asp-action="GuestDetails" asp-route-id="@guest.Id" class="btn btn-sm btn-info">
+                    <a asp-action="GuestDetails" 
+                    asp-route-id="@guest.Id" 
+                    class="btn btn-sm @(guest.WillAttend ? "btn-success" : "btn-danger")">
                         Detaylar 🔍
                     </a>
                 </td>
