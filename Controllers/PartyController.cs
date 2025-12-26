@@ -10,7 +10,7 @@ namespace deneme.Controllers
     public class PartyController : Controller
     {
         
-        [HttpPost]
+        [HttpPost] //form gönderildiğinde burası çalışır
         public ActionResult Register(Guest guest)
         {
 
