@@ -1,0 +1,23 @@
+@model deneme.Models.Guest
+
+
+
+<form asp-action="Register" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+    <div>
+        <label>İsim:</label>
+        <input type="text" asp-for="Name" /> <span asp-validation-for="Name" class="text-danger"></span> 
+    </div>
+
+    <div>
+        <label>Telefon:</label>
+        <input type="text" asp-for="Phone" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+
+    <button type="submit">Gönder</button>
+
+
+</form>
