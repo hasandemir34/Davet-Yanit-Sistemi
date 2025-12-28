@@ -19,7 +19,7 @@ namespace deneme.Models
             {
                 guest.Id = 1;
             }
-            else
+            else //pk için gerekli düzenleme yapılıyor.
             {
                 // Listedeki en büyük ID'yi bul ve 1 ekle
                 guest.Id = guests.Max(g => g.Id) + 1;
