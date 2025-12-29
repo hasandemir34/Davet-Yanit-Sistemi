@@ -7,7 +7,7 @@ namespace deneme.Models
 
         // Listeyi dışarıya (Controller'a) veren metod
         public static IEnumerable<Guest> GetGuests()
-        {
+        { //Ienumerable diyerek ona sadece okuma yapabildiğini söylüyorum.
             return guests;
         }
 
